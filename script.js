@@ -19,14 +19,22 @@ function handleFormSubmit(event) {
   if (!activity) {
     console.log('No things to do at this moment!');
     return;
-  }
+  };
 
   // print to the page
   toDoListEl.append('<li>' + activity + '</li>');
+  
 
   // clear the form input element
   $('input[name="list-input"]').val('');
-}
+
+  
+      localStorage.setItem('activity', JSON.stringify(avtivity));
+      localStorage.getItem("activity")
+  };
+  
+  
+
 
 // Create a submit event listener on the form element
-saveEl.on('submit', handleFormSubmit);
+saveEl.on('click', handleFormSubmit);
