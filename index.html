@@ -26,107 +26,135 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="day" class="lead"></p>
+      <p id="time" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 8 am </P>
         </div>
-        <div class="col-9 border border-dark   p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark   p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 9 am </P>
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 10 am </P>
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 11 am </P>
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 12 pm </P>
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 1 pm </P>
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 2 pm </P>         
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 3 pm </P>
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 border border-dark p-3 mb-2 bg-info text-white">
-          1 of 3
+        <div class="col-2 border border-dark p-0 mb-0 bg-info text-white">
+          <P class ="font-weight-bold text-center"> 4 pm </P>
         </div>
-        <div class="col-9 border border-dark p-3 mb-2 bg-light text-dark">
-          2 of 3 (wider)
+        <div class="col-9 border border-dark p-0 mb-0 bg-light text-dark">
+          <form id="shedule-form">
+            <input type="text" class="form-input w-100" id="list-input" name="list-input" placeholder="Enter text" />
+            <ul id="to-do-list"></ul>
+          </form>
         </div>
         <div class="col-1 border border-dark p-0 mb-0 bg-success text-white">
-          <i id = "icone" class="fas fa-save"></i>
+          <i id = "icon" class="fas fa-save"></i>
         </div>
       </div>
 
@@ -134,4 +162,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src = "./script.js"></script>
   </body>
+
 </html>
