@@ -13,6 +13,27 @@ textarea {
   padding: 10px;
 }
 
+.container {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+.hr-style {
+  width: 17%;
+}
+
+.sav-style {
+  width: 7%;
+}
+
+.save-icon {
+  border:none;
+  background:none;
+}
+.vertical {
+  vertical-align: middle !important;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
