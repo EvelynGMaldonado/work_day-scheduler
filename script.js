@@ -9,7 +9,7 @@ var toDoListEl = $("#to-do-list");
 var saveEl = $("#icon")
 var timeBlock = $(".time-block")
 
-var armytime = [8, 9, 10, 11, 12, 13, 14, 15, 16];
+var armytime = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
 
 for (var i = 0; i<armytime.length; i++) {
   var thisHour = parseInt(moment().format("H"));
