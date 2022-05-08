@@ -80,6 +80,7 @@ td.vertical {
 
 button.save-icon{
   padding: 0%;
+  background-color: rgb(0, 97, 149, 0.7);
 }
 .save-icon {
   width: 100%;
@@ -92,7 +93,7 @@ button.save-icon{
   color: white; */
 }
 
-button:hover {
+img:hover {
   transform: scale(1.5);
   /* font-size: 5rem;
   transition: all 0.3s ease-in-out; */
@@ -100,4 +101,6 @@ button:hover {
 
 .task {
   padding: 0%;
+  color:black;
+  border-radius: 0% !important;
 }
