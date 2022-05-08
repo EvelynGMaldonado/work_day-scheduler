@@ -41,24 +41,27 @@ td.vertical {
   white-space: pre-wrap;
 }
 
-.time-block {
+.mybtn {
+  padding:0% !important;
+}
+/* .time-block {
   text-align: center;
   border-radius: 15px;
-}
+} */
 
 
-.row {
+/* .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-}
+} */
 
 
-.hour {
+/* .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-}
+} */
 
 .past {
   background-color: #d3d3d3;
@@ -75,17 +78,24 @@ td.vertical {
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
+button.save-icon{
+  padding: 0%;
+}
+.save-icon {
+  width: 100%;
+  height: 100%;
+  padding:12%;
+  /* border-left: 1px solid black;
   border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  border-bottom-right-radius: 15px; */
+  /* background-color: #06aed5;
+  color: white; */
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+button:hover {
+  transform: scale(1.5);
+  /* font-size: 5rem;
+  transition: all 0.3s ease-in-out; */
 }
 
 .task {
