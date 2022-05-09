@@ -1,214 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
-    <title>Day Planner</title>
+    <title>Work Day Scheduler</title>
+    <!-- <script>
+      document.ready(function() {
+        $("button").click(function(){
+          $(this).find("i").removeClass("bi bi-cloud").addClass("bi bi-cloud-check");
+          });
+        })
+      
+    </script> -->
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Day Planner</h1>
-      <p class="lead">Keep track of your activities</p>
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="day" class="lead"></p>
       <p id="time" class="lead"></p>
     </header>
-    <div class="table-responsive container">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col" class="hr-style">Hour</th>
-            <th scope="col">Activity</th>
-            <th scope="col" class="sav-style">Save</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="vertical">6 am</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="6" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">7 am</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="7" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">8 am</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="8" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">9 am</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="9" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">10 am</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="10" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">11 am</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="11" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">12 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="12" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">1 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="13" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">2 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="14" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">3 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="15" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">4 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="16" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">5 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="17" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">6 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="18" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">7 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="19" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">8 pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="20" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">9pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="21" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-          <tr>
-            <th scope="row" class="vertical">10pm</th>
-            <td class="vertical">
-              <div class="input-group" >
-                <textarea class="form-control task" style="border: transparent;" id="22" aria-label="With textarea" placeholder="Enter text"></textarea>
-              </div>
-            </td>
-            <td class="mybtn vertical"><button class="save-icon"><img src="./cloud-check.svg" class="save-icon" style="max-height: 48px;" ></button></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!-- <div class="container time-block">
+    <div class="container time-block">
       <div class="row">
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 8 am </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="8" placeholder="enter text">
+        <textarea class="col-9" id="8" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
-          <i class="fas fa-save"></i>
+          <i class="bi bi-cloud"></i>
         </button>
       </div>
       <div class="row">
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 9 am </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="9" placeholder="enter text">
+        <textarea class="col-9" id="9" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
@@ -219,7 +54,7 @@
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 10 am </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="10" placeholder="enter text">
+        <textarea class="col-9" id="10" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
@@ -230,7 +65,7 @@
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 11 am </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="11" placeholder="enter text">
+        <textarea class="col-9" id="11" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
@@ -241,7 +76,7 @@
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 12 pm </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="12" placeholder="enter text">
+        <textarea class="col-9" id="12" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
@@ -252,7 +87,7 @@
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 1 pm </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="13" placeholder="enter text">
+        <textarea class="col-9" id="13" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
@@ -263,7 +98,7 @@
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 2 pm </P>         
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="14" placeholder="enter text">
+        <textarea class="col-9" id="14" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
@@ -274,7 +109,7 @@
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 3 pm </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="15" placeholder="enter text">
+        <textarea class="col-9" id="15" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
@@ -285,14 +120,13 @@
         <div class="col-2 hour">
           <P class ="font-weight-bold text-center"> 4 pm </P>
         </div>
-        <textarea class="col-9 border border-dark   p-0 mb-0 bg-light text-dark" id="16" placeholder="enter text">
+        <textarea class="col-9" id="16" placeholder="enter text">
         
         </textarea>
         <button class="col-1 saveBtn">
           <i class="fas fa-save"></i>
         </button>
       </div>
-      </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

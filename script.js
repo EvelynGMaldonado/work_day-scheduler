@@ -6,8 +6,8 @@ $("#day").text(today.format("MMM Do, YYYY"));
 
 var sheduleFormEl = $("#shedule-form");
 var toDoListEl = $("#to-do-list");
-var saveEl = $("#icon")
-// var timeBlock = $(".time-block")
+var saveEl = $("#icon");
+var timeBlock = $(".time-block");
 
 var armytime = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
 
@@ -29,7 +29,9 @@ for (var i = 0; i<armytime.length; i++) {
   }
 }
 
-
+$("button").click(function(){
+  $(this).find("i").removeClass("bi bi-cloud").addClass("bi bi-cloud-check");
+  });
 
 
 
@@ -45,7 +47,7 @@ function handleFormSubmit(event) {
     console.log('No things to do at this moment!');
     return;
   };
-
+      
       localStorage.setItem(id, JSON.stringify(activity));
      // localStorage.getItem("activity")
 };
